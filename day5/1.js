@@ -3,7 +3,7 @@ const express = require("express");
 const fs = require("fs");
 
 // Step -2
-const app = express()
+const app = express();
 
 // middleware  --> req.body --> parse
 app.use(express.json());
