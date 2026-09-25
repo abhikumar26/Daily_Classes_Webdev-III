@@ -1,0 +1,5 @@
+Mongoose = Mongoose is node.js library that act as an Object data modeling (ODM) tool for mongoDB . It is the bridge b/w server and database.
+halp to build--
+1.) Connection
+2.) validation
+3.) Structure
