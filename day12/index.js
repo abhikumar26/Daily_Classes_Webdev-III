@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
 }
 );
 
-const userModel = mongoose.model("user", userSchema);
+const userModel = mongoose.model("Prithvi", userSchema);
 
 const main = async () => {
     // step-2 Built connection with mongodb
@@ -20,7 +20,7 @@ const main = async () => {
     console.log("DB connected")
     userModel.insertOne({
         name: "Prithvi",
-        email: "radheybiotech@gmail.com",
+        email: "radheybhaiyabiotech@gmail.com",
         age: 19,
         password: "xyz"
     })
@@ -31,7 +31,7 @@ const main = async () => {
         password: "xyz"
     });
     // Step - 3 disconnect
-    // mongoose.disconnect();
-    // console.log("DB Disconnect");
+    mongoose.disconnect();
+    console.log("DB Disconnect");
 };
 main();
